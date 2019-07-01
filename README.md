@@ -3,3 +3,4 @@
 Topics Covered
  - Triggers
  - SOSL Queries
+ - SOQL Queries
