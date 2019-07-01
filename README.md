@@ -2,5 +2,6 @@
 
 ## Topics Covered
  - Triggers
+ - Debugging / Testing
  - SOSL Queries
  - SOQL Queries
