@@ -1,6 +1,6 @@
 # Repository for salesforce apex code
 
-Topics Covered
+## Topics Covered
  - Triggers
  - SOSL Queries
  - SOQL Queries
