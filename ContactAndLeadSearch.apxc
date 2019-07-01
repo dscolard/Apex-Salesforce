@@ -1,3 +1,6 @@
+
+//Searching the contact and lead objects using SOSL
+
 public class ContactAndLeadSearch {
     
     //Create a 2D array oof lists, in this case a list of contacts and a list of leads.
