@@ -6,3 +6,4 @@
  - Creating/Editing SObjects through Apex
  - SOSL Queries
  - SOQL Queries
+ - Asynchronous Processing
