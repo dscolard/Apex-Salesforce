@@ -1,6 +1,11 @@
+
+//This visualforce page retrieves records of all cases which have not yet been closed, and have a priority of 'medium' or 'high'.
+//A pie chart graph is used to graphically represent the data.
+//Case record pages are accessable by clicking on the Case Number of any given record.
+
 <apex:page controller="NewCaseListController">
 
-		<apex:form>
+	<apex:form>
             <apex:pageBlock html-style="font-size:16px" title="Priority Case" id="cases_list">
                 <apex:pageBlockTable value="{!NewCases}" var="cs">
 
@@ -15,7 +20,6 @@
 
                     <apex:column value="{!cs.status}"/>
                     <apex:column value="{!cs.priority}"/>
-
 
             	</apex:pageBlockTable>
             </apex:pageBlock>
