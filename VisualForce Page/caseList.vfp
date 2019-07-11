@@ -1,0 +1,29 @@
+<apex:page controller="NewCaseListController">
+
+		<apex:form>
+            <apex:pageBlock html-style="font-size:16px" title="Priority Case" id="cases_list">
+                <apex:pageBlockTable value="{!NewCases}" var="cs">
+
+                    <apex:column value="{!cs.Account.Name}"/>
+  					
+                    //Clickable link to the case page
+                    <apex:column headerValue="Case Number (Click to go to case page)">            
+                        <apex:outputLink value="/{!cs.Id}">
+                            {!cs.CaseNumber}
+                        </apex:outputLink>           
+                    </apex:column>
+
+                    <apex:column value="{!cs.status}"/>
+                    <apex:column value="{!cs.priority}"/>
+
+
+            	</apex:pageBlockTable>
+            </apex:pageBlock>
+        </apex:form>
+    
+	<apex:chart height="350" width="450" data="{!pieData}">
+        <apex:pieSeries dataField="data" labelField="name"/>
+        <apex:legend position="right"/>
+    </apex:chart>
+    
+</apex:page>
